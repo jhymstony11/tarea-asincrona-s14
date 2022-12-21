@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<title>AngularJS Sesion 14</title>
+</head>
+<body>
+    <div ng-app="MyApp" ng-controller="desarrolloController">
+        <form>
+          <label for="horasTrabajadas">Numero de horas trabajadas:</label><br>
+          <input type="number" ng-model="horasTrabajadas"><br>
+
+          <label for="tarifaPorHora">Tarifa por hora:</label><br>
+          <input type="number" ng-model="tarifaPorHora"><br>
+
+          <button type="button" ng-click="calculoPago()">Calcular pago</button>
+        </form> 
+        <p>El salario basico es: S/. {{pago}} soles , su descuento es S/. {{descuento}} soles y su salario neto es S/. {{neto}}</p>
+      </div>
+<script src="./js/new.js"></script>
+</body>
+</html>
